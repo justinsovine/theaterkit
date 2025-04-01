@@ -1,30 +1,67 @@
-/vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
+# ====================================================
+# General Node & Log Files
+# ====================================================
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
+# Node modules (if any exist at the root)
+/node_modules/
 
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
+# Debug log files (npm & yarn)
+npm-debug.log*
+yarn-error.log*
 
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
+# ====================================================
+# Backend (Laravel) Files & Folders
+# ====================================================
 
-storage/*.key
-.env
-Homestead.yaml
-Homestead.json
-/.vagrant
-.phpunit.result.cache
+# Composer dependencies
+/backend/vendor/
 
-/public/build
-/storage/pail
-.env.backup
-.env.production
-.phpactor.json
-auth.json
+# Laravel 4 specific files
+/backend/bootstrap/compiled.php
+/backend/app/storage/
+
+# Laravel 5 / Lumen specific directories
+/backend/public/storage
+/backend/public/hot
+
+# For Laravel installations with a changed public path
+/backend/public_html/storage
+/backend/public_html/hot
+
+# Key files, environment, and backups
+/backend/storage/*.key
+/backend/.env
+/backend/.env.backup
+/backend/.env.production
+
+# Homestead (local dev) configuration
+/backend/Homestead.yaml
+/backend/Homestead.json
+
+# Vagrant directory (if used)
+/backend/.vagrant
+
+# PHPUnit cache
+/backend/.phpunit.result.cache
+
+# Other build artifacts and storage folders
+/backend/public/build
+/backend/storage/pail
+
+# Additional configuration files (if used)
+/backend/.phpactor.json
+/backend/auth.json
+
+# ====================================================
+# Frontend (Vue/Vite) Files & Folders
+# ====================================================
+
+# Node modules for frontend dependencies
+/frontend/node_modules/
+
+# Vite build output (production-ready assets)
+ /frontend/dist/
+
+# Environment files for frontend (e.g., .env, .env.local)
+ /frontend/.env*
+
