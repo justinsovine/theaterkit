@@ -1,4 +1,25 @@
 # ====================================================
+# Operating System & IDE Specific Files
+# ====================================================
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux directory settings
+.directory
+
+# VS Code settings
+.vscode/
+
+# JetBrains IDEs (PhpStorm, WebStorm, etc.)
+.idea/
+
+# ====================================================
 # General Node & Log Files
 # ====================================================
 
