@@ -1,5 +1,5 @@
 <script setup>
-import MovieGrid from '@/components/MovieGrid.vue';
+import MovieGrid from '@/components/movies/Grid.vue';
 </script>
 
 <template>

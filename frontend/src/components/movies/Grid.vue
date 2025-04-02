@@ -1,5 +1,5 @@
 <script setup>
-import MovieCard from './MovieCard.vue';
+import Card from './Card.vue';
 
 const movies = [
     {
@@ -71,7 +71,7 @@ const movies = [
 
 <template>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        <MovieCard v-for="movie in movies" :key="movie.id" :movie="movie" />
+        <Card v-for="movie in movies" :key="movie.id" :movie="movie" />
     </div>
 </template>
 

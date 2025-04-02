@@ -66,7 +66,7 @@ const generateShowtimes = () => {
 onMounted(() => {
     movie.value = {
         id: movieId,
-        title: 'Nebula’s Grasp',
+        title: 'Nebula\'s Grasp',
         description:
             'Reality bends and sanity fractures in this chilling descent into the unknown. When an astronomer uncovers a signal from deep space, the town begins to unravel — and so does she.',
         duration: '2h 5m',
@@ -79,7 +79,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div v-if="movie">
+    <div class="container mx-auto" v-if="movie">
         <div class="flex xl:items-center">
             <!-- 🎥 Trailer Column -->
             <div class="w-3/6">
@@ -176,13 +176,20 @@ onMounted(() => {
                                 }}
                             </strong>
                         </p>
-                        <button
+                        <!-- <a
+                            href=""
                             class="bg-primary text-primary-light px-4 py-2 rounded transition disabled:opacity-50 disabled:cursor-not-allowed"
                             :disabled="!selectedShowtime"
                             @click="goToCheckout"
+                        > -->
+                        <router-link 
+                            :to="`/movies/${movieId}/seats`"
+                            href=""
+                            class="bg-primary text-primary-light px-4 py-2 rounded transition disabled:opacity-50 disabled:cursor-not-allowed"
+                            :disabled="!selectedShowtime"
                         >
                             Choose Your Seats
-                        </button>
+                        </router-link>
                     </div>
                 </div>
             </div>
