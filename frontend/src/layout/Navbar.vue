@@ -3,7 +3,10 @@
         <div class="mx-auto">
             <div class="flex justify-between items-center h-16">
                 <!-- Branding -->
-                <div class="text-2xl font-extrabold">TheaterKit</div>
+                <div class="flex gap-2">
+                    <img src="/favicon-32x32.png" class="h-7">
+                    <span class="text-2xl font-extrabold">TheaterKit</span>
+                </div>
                 <!-- Desktop Navigation -->
                 <div class="hidden sm:block">
                     <ul class="flex space-x-4">
