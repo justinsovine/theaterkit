@@ -1,0 +1,27 @@
+# Laravel dependencies and generated files
+/api/vendor/** linguist-vendored
+/api/storage/** linguist-generated
+/api/bootstrap/cache/** linguist-generated
+
+# Vue frontend dependencies and build output
+/web/node_modules/** linguist-vendored
+/web/dist/** linguist-generated
+/web/.vite/** linguist-generated
+
+# Lockfiles and environment configs
+*.lock linguist-generated
+.env linguist-generated
+*.env.example linguist-generated
+
+# Blade templates should count as HTML
+*.blade.php linguist-language=HTML
+
+# Vue and JS frontend
+*.vue linguist-language=Vue
+*.js linguist-language=JavaScript
+*.ts linguist-language=TypeScript
+
+# Directory-level language hints
+api/** linguist-language=PHP
+web/** linguist-language=JavaScript
+
